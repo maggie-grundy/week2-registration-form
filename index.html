@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Registration Form</title>
+    <link rel="stylesheet" href="styles.css">     
+</head>
+
+<body>
+  <header class="header">
+    <h1>Welcome to my Registration Form!</h1>
+    </header>
+
+    <main>
+        <h2>Contact Me Form</h2>
+
+        <form action="" class="main_form">
+            <div class="main_form__field">
+              <label for="firstName" 
+              class="main_form__field__label">First Name:</label>
+              <input type="text" id="firstName"
+              class="main_form__field__input" name="firstName" placeholder="Nicholas" required>
+            </div>     
+        
+        <div class="main_form__field"> 
+        <label for="lastName" class="main_form__field__label">Last Name:</label>
+        <input type="text" id="lastName" class="main_form__field__input" name="lastName" placeholder="Cage" required>
+        <!--I'm dying of laughter because html5 snippets correctly guessed that I was going to put "Cage" for the last name here-->
+        </div>
+
+        <div class="main_form__field">
+        <label for="emailInfo" class="main_form__field__label">Email:</label>
+        <input type="email" id="emailInfo" 
+        class="main_form__field__input" name="emailInfo" placeholder="ohimark@realemail.com#" required> 
+        </div>
+        
+        <button class="main_form__submit" type="submit">Submit</button>
+</form>
+</main>
+        <script src="./main.js"></script>
+
+</body>
+</html>
