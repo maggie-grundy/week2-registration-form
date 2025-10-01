@@ -1,54 +1,95 @@
+body {
+  background-color: #dbdbdb;
+}
+
 .main_form {
-    background-color: #f8f9fa;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    width: 100%;
-    max-width: 400px;
-    gap: 20px;
-     font-family: 'Courier New', Courier, monospace
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  gap: 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .main_form__field {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .main_form__field__input {
-    border: solid 1px #ffb2e7;
-    padding: 10px 20px;
-     font-family: 'Courier New', Courier, monospace;
+  border: solid 1px #ffb2e7;
+  padding: 10px 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .main_form__field__input:focus {
-    outline: none;
-    border-color: #ff76d4;
-    box-shadow: 0 0 5px rgba(255, 118, 212, 0.5);
+  outline: none;
+  border-color: #ff76d4;
+  box-shadow: 0 0 5px rgba(255, 118, 212, 0.5);
 }
 
 .main_form__submit {
-    background-color: #ff76d4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 50px;
-    transition: background-color 0.3s ease;
+  background-color: #ff76d4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 50px;
+  transition: background-color 0.3s ease;
 }
 
 .main_form__submit:hover {
-    background-color: #ff4ab8;
-    transform: scale(1.05);
+  background-color: #ff4ab8;
+  transform: scale(1.05);
 }
 
 .main_form__submit:active {
-    transform: translateY(5px)
+  transform: translateY(5px);
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  text-align: center;
+  color: #ff76d4;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: overline;
+}
+
+#output {
+  /* Initially hidden */
+  display: none;
+  background-color: rgb(178, 255, 255);
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px auto 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main_form__checklist {
+  border-color: #ff76d4;
+  border-width: 1px;
+}
+
+input[type="checkbox"] {
+  accent-color: #ff76d4;
 }

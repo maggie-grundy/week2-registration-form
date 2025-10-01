@@ -1,44 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Registration Form</title>
-    <link rel="stylesheet" href="styles.css">     
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-  <header class="header">
-    <h1>Welcome to my Registration Form!</h1>
+  <body>
+    <header class="header">
+      <h1>Welcome to my Registration Form!</h1>
     </header>
 
     <main>
-        <h2>Contact Me Form</h2>
+      <h2>Contact Me Form</h2>
 
-        <form action="" class="main_form">
-            <div class="main_form__field">
-              <label for="firstName" 
-              class="main_form__field__label">First Name:</label>
-              <input type="text" id="firstName"
-              class="main_form__field__input" name="firstName" placeholder="Nicholas" required>
-            </div>     
-        
-        <div class="main_form__field"> 
-        <label for="lastName" class="main_form__field__label">Last Name:</label>
-        <input type="text" id="lastName" class="main_form__field__input" name="lastName" placeholder="Cage" required>
-        <!--I'm dying of laughter because html5 snippets correctly guessed that I was going to put "Cage" for the last name here-->
+      <form action="" class="main_form" id="myForm">
+        <div class="main_form__field">
+          <label for="firstName" class="main_form__field__label"
+            >First Name:</label
+          >
+          <input
+            type="text"
+            id="firstName"
+            class="main_form__field__input"
+            name="firstName"
+            placeholder="Nicholas"
+            required
+          />
         </div>
 
         <div class="main_form__field">
-        <label for="emailInfo" class="main_form__field__label">Email:</label>
-        <input type="email" id="emailInfo" 
-        class="main_form__field__input" name="emailInfo" placeholder="ohimark@realemail.com#" required> 
+          <label for="lastName" class="main_form__field__label"
+            >Last Name:</label
+          >
+          <input
+            type="text"
+            id="lastName"
+            class="main_form__field__input"
+            name="lastName"
+            placeholder="Cage"
+            required
+          />
+          <!--I'm dying of laughter because html5 snippets correctly guessed that I was going to put "Cage" for the last name here-->
         </div>
-        
-        <button class="main_form__submit" type="submit">Submit</button>
-</form>
-</main>
-        <script src="./main.js"></script>
 
-</body>
+        <div class="main_form__field">
+          <label for="emailInfo" class="main_form__field__label">Email:</label>
+          <input
+            type="email"
+            id="emailInfo"
+            class="main_form__field__input"
+            name="emailInfo"
+            placeholder="ohimark@realemail.com#"
+            required
+          />
+        </div>
+
+        <div class="main_form__field">
+            <label for="password" class="main_form__field__label">Password:</label>
+            <input
+                type="password"
+                id="password"
+                class="main_form__field__input"
+                name="password"
+                minlength="6"
+                required
+                />
+
+        <div class="main_form__field">
+            <label for="confirmPassword" class="main_form__field__label">Confirm Password:</label>
+            <input
+                type="password"
+                id="confirmPassword"
+                class="main_form__field__input"
+                name="confirmPassword"
+                minlength="6"
+                required
+                />
+        </div>
+
+        <div class="main_form__field">
+            <label for="birthdate" class="main_form__field__label">Birthdate:</label>
+            <input
+                type="number"
+                id="birthdate"
+                class="main_form__field__input"
+                name="birthdate"
+                min="1900"
+                placeholder="MM/DD/YYYY"
+                required
+                />
+        </div>
+
+        <div class="main_form__field">
+            <fieldset class="main_form__checklist">  
+                <legend class="main_form__field__label">
+                What do ya like??</legend>
+                <input type="checkbox" id="cheeseburger" name="interest" value="cheeseburger">
+                <label for="cheeseburger">Cheeseburgers</label><br>
+                <input type="checkbox" id="tacos" name="interest" value="tacos">
+                <label for="tacos">Tacos</label><br>
+                <input type="checkbox" id="sushi" name="interest" value="sushi">
+                <label for="sushi">Sushi</label><br>
+                <input type="checkbox" id="salad" name="interest" value="salad">
+                <label for="salad">Salad</label><br>
+                <input type="checkbox" id="pizza" name="interest" value="pizza">
+                <label for="pizza">Pizza</label><br>
+                <input type="checkbox" id="icecream" name="interest" value="icecream">
+                <label for="icecream">Ice Cream</label><br>
+                </div>
+            </fieldset>
+            </div>
+        </div>
+
+        <button class="main_form__submit" type="submit">Submit!</button>
+      </form>
+      <div id="output"></div>
+    </main>
+
+    <!-- Linking Javascript -->
+    <script src="./main.js"></script>
+  </body>
 </html>
